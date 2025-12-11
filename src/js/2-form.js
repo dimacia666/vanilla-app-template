@@ -1,4 +1,8 @@
 const feedbackForm = document.querySelector(".feedback-form");
+feedbackForm.style.display = "flex";
+feedbackForm.style.flexDirection = "column";
+feedbackForm.style.gap = "10px";
+    
 const emailInput = feedbackForm.elements.email;
 const messageInput = feedbackForm.elements.message;
     
@@ -37,7 +41,7 @@ function onSubmit(event) {
     };
 
     console.log(formData);
-    
+
     formData = {
         email: "",
         message: "",
